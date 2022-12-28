@@ -1,0 +1,41 @@
+.animasinya {
+    position: relative;
+    z-index: 8;
+    padding: 16px 0;
+    background: white;
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.0225rem;
+    }
+    
+    .cardx {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px;
+    }
+    
+    .cardx--reverse {
+      flex-direction: row-reverse;
+    }
+    
+    .cardx__img-holder {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+    
+    .cardx__text {
+      width: 400px;
+    }
+}
