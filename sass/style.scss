@@ -54,6 +54,7 @@ section {
 }
 
 .paragraph {
+    padding: 16px 0;
     background-image: linear-gradient(to top, #595f69, #6a767a, #818b8b, #9ba19e, #b6b7b4);
     font-size: 1.8rem;
     p {
@@ -102,6 +103,83 @@ section {
                 height: 100%;
                 object-fit: contain;
             }
+        }
+    }
+}
+
+
+.colorx {
+    width: 520px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    @media screen and (max-width:766px) {
+        width: 320px;
+    }
+}
+.imagesx {
+    width: 100%;
+    height: 320px;
+    &__small{
+        width: 60px ;
+        height: 60px;
+        @media screen and (max-width:766px) {
+            height: 28px;
+        }
+        margin: 0 8px;
+        cursor: pointer;
+        .colorxx{
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            &-white {
+                background: white;
+            }
+            &-black {
+                background: black;
+            }
+            &-grey {
+                background: grey;
+            }
+            &-silver {
+                background: silver;
+            }
+            &-steal {
+                background: #494b50;
+            }
+        }
+        &:hover {
+            opacity: .8;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slick{
+    &-next,&-prev {
+        &::before {
+            font-family: 'fontAwesome';
+        }
+    }
+    &-prev {
+        &::before {
+            content: "\f104";
+        }
+    }
+    &-next {
+        &::before {
+            content: "\f105";
         }
     }
 }

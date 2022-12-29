@@ -81,3 +81,21 @@ targetsBreak.forEach((target, index) => {
     .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
     .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
 });
+
+
+//slick
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 0,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
