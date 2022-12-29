@@ -70,6 +70,9 @@ section {
     padding: 24px 0;
     background-image: linear-gradient(to top, #595f69, #6a767a, #818b8b, #9ba19e, #b6b7b4);
     font-size: 1.8rem;
+    @media screen and (max-width:766px) {
+        font-size: 1.2rem;
+    }
     p {
         font-family: 'Rubik',sans-serif;
     }

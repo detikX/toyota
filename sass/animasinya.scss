@@ -12,6 +12,10 @@
         width: 320px;
         height: 150px;
         margin: 8px 0px;
+        @media screen and (max-width:766px) {
+            width: 45%;
+            margin: 8px 6px;
+        }
     }
 
     .jajargenjang {
