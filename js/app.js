@@ -1,3 +1,8 @@
+
+$(document).ready(function(){
+  new WOW().init();
+})
+
 gsap.registerPlugin(ScrollTrigger);
 
 var targetsEndTrigger = document.querySelectorAll(".endtrigger");
@@ -21,7 +26,7 @@ targetsEndTrigger.forEach((target, index) => {
         start: "center center",
         // end,
         endTrigger,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
@@ -47,7 +52,7 @@ targetsHeight.forEach((target, index) => {
         scrub: true,
         start: "center center",
         end,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
@@ -73,7 +78,7 @@ targetsBreak.forEach((target, index) => {
         scrub: true,
         start: "center center",
         end,
-        markers: true,
+        markers: false,
         toggleActions: "restart none reverse reset",
         pinSpacing,
       },
@@ -81,6 +86,8 @@ targetsBreak.forEach((target, index) => {
     .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
     .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
 });
+
+
 
 
 //slick
@@ -92,7 +99,7 @@ $('.slider-for').slick({
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-  slidesToShow: 5,
+  slidesToShow: 4.5,
   slidesToScroll: 0,
   asNavFor: '.slider-for',
   dots: true,
