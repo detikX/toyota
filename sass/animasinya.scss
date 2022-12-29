@@ -1,0 +1,39 @@
+.animasinya {
+    .spoiler {
+        h2 {
+            margin: 16px 0 32px;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+
+    .data-tech {
+        display: inline-block;
+        width: 320px;
+        height: 150px;
+        margin: 8px 0px;
+    }
+
+    .jajargenjang {
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        @media screen and (max-width:766px) {
+            clip-path: initial;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            // transform: skewX(20deg);
+            img {
+                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+        }
+        
+    }
+}

@@ -23,6 +23,10 @@
       justify-content: space-around;
       align-items: center;
       padding: 60px;
+      @media screen and (max-width:766px) {
+        display: block;
+        padding: 16px !important;
+      }
     }
     
     .cardx--reverse {
@@ -31,7 +35,13 @@
     
     .cardx__img-holder {
       width: 420px;
-      height: 200px;
+      height: 240px;
+      @media screen and (max-width:766px) {
+        width: auto;
+        height: 150px;
+        margin-bottom: 16px;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+      }
     //   background-color: red;
         img {
             width: 100%;
@@ -42,5 +52,8 @@
     
     .cardx__text {
       width: 400px;
+      @media screen and (max-width:766px) {
+        width: auto;
+      }
     }
 }
