@@ -42,10 +42,10 @@
 
     .cardx__img-holder {
       &::before {
-        left: 16px;
-        bottom: -16px;
-        top: 16px;
-        right: -16px;
+        left: 8px;
+        bottom: -8px;
+        top: 8px;
+        right: -8px;
 
         @media screen and (max-width:766px) {
           left: 8px;
@@ -65,11 +65,14 @@
     &::before {
       content: "";
       position: absolute;
-      left: -16px;
-      bottom: -16px;
-      top: 16px;
-      right: 16px;
-      border: 1px solid;
+      left: -8px;
+      bottom: -8px;
+      top: 8px;
+      right: 8px;
+      border-radius: 4px;
+      // background: #4b7644; 
+      background: #dce775;
+      // border: 2px solid #4b7644;
       z-index: 2;
 
       @media screen and (max-width:766px) {
@@ -94,6 +97,7 @@
       height: 100%;
       position: relative;
       z-index: 3;
+      border-radius: 4px;
       object-fit: cover;
     }
   }
