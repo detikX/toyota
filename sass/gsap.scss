@@ -1,59 +1,70 @@
-.animasinya {
-    position: relative;
-    z-index: 8;
-    padding: 16px 0;
-    background: white;
-    h1 {
-        text-align: center;
+.cerita {
+  position: relative;
+  z-index: 8;
+  padding: 16px 0;
+  background: white;
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.0225rem;
+
+    @media screen and (max-width:766px) {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      letter-spacing: initial;
     }
-    
-    h2 {
-      font-weight: 500;
-      font-size: 2rem;
+  }
+
+  .cardx {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+
+    @media screen and (max-width:766px) {
+      // display: block;
+      padding: 16px !important;
     }
-    
-    p {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      letter-spacing: 0.0225rem;
+  }
+
+  .cardx--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .cardx__img-holder {
+    width: 35%;
+    height: 75vh;
+
+    @media screen and (max-width:766px) {
+      width: 50%;
+      height: auto;
+      margin-bottom: 16px;
+      // clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     }
-    
-    .cardx {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 60px;
-      @media screen and (max-width:766px) {
-        display: block;
-        padding: 16px !important;
-      }
-    }
-    
-    .cardx--reverse {
-      flex-direction: row-reverse;
-    }
-    
-    .cardx__img-holder {
-      width: 420px;
-      height: 240px;
-      @media screen and (max-width:766px) {
-        width: auto;
-        height: 150px;
-        margin-bottom: 16px;
-        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-      }
+
     //   background-color: red;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    
-    .cardx__text {
-      width: 400px;
-      @media screen and (max-width:766px) {
-        width: auto;
-      }
+  }
+
+  .cardx__text {
+    width: 400px;
+
+    @media screen and (max-width:766px) {
+      width: 50%;
     }
+  }
 }
