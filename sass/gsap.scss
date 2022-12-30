@@ -110,3 +110,24 @@
     }
   }
 }
+
+.lewat {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+
+  @media screen and(max-width:766px) {
+    bottom: -72px;
+  }
+
+  .image {
+    width: 200px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
