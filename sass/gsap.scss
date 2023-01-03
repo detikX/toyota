@@ -116,6 +116,10 @@
   position: absolute;
   bottom: 32px;
   right: 32px;
+  &.leftx {
+    right: initial;
+    left: 32px;
+  }
 
   @media screen and(max-width:766px) {
     bottom: -72px;
