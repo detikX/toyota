@@ -87,9 +87,6 @@ targetsBreak.forEach((target, index) => {
     .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
 });
 
-
-
-
 //slick
 $('.slider-for').slick({
   slidesToShow: 1,
@@ -106,3 +103,53 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true
 });
+
+$.ajax({
+  url: 'js/fitur.json',
+  type:"GET",
+  success: (response) =>{
+    // console.log(response.length);
+    var a;
+      for(a=0; a<response.length; a++) {
+        var titlex = response[a].title;
+        var content = response[a].content;
+        var short = response[a].short;
+        var o ="";
+        content.map((a, n) => {
+          o += `<div class="data-tech wow animate__animated animate__fadeIn" data-wow-delay="${a.delay}">
+          <div class="jajargenjang">
+            <div class="image"><img src="${a.img}" alt=""></div>
+            <div class="title">
+              ${a.nama}
+            </div>
+          </div>
+        </div>`;
+
+        // depan+= `<li>${a.title}</li>`
+      });
+
+        $("body").append(
+          `
+            <section class="animasinya">
+            
+            <div class="spoiler">
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 offset-md-1">
+                  <h2 class="text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">${titlex}</h2>
+                  <p class="text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">${short}</p>
+                </div>
+              </div>
+              
+              <div class="d-block text-center mx-auto">
+                ${o}
+              </div>
+            </div>
+          </div>
+            </section>
+          `
+        )
+      }
+  }
+})

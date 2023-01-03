@@ -1,0 +1,89 @@
+[   
+    {
+        "id":1,
+        "title":"Fitur Eksterior",
+        "short":"Lorem ipsum fitur eksterior",
+        "content": [
+            {
+                "id": 1,
+                "img":"img/eksterior/1.jpg",
+                "nama":"New Crossover",
+                "delay":"0.5"
+            },
+            {
+                "id": 2,
+                "img":"img/eksterior/2.jpg",
+                "nama":"New Fascinating",
+                "delay":"0.5"
+            },
+            {
+                "id": 3,
+                "img":"img/eksterior/3.jpg",
+                "nama":"Power Backdoor with Voice",
+                "delay":"0.5"
+            }, {
+                "id": 4,
+                "img":"img/eksterior/4.jpg",
+                "nama":"New Rear",
+                "delay":"0.7"
+            },
+            {
+                "id": 5,
+                "img":"img/eksterior/5.jpg",
+                "nama":"Ornament Modellista",
+                "delay":"0.7"
+            },
+            {
+                "id": 6,
+                "img":"img/eksterior/3.jpg",
+                "nama":"Bumper Modellista",
+                "delay":"0.7"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title":"Fitur Interior",
+        "short":"Lorem ipsum fitur interior",
+        "content": [
+            {
+                "id": 1,
+                "img":"img/interior/atap.jpg",
+                "nama":"Panoramic Roof",
+                "delay":"0.5"
+            },
+            {
+                "id": 2,
+                "img":"img/interior/charger.jpg",
+                "nama":"Wireless Charge",
+                "delay":"0.5"
+            },
+            {
+                "id": 3,
+                "img":"img/interior/dashboard.jpg",
+                "nama":"Majestic Dashboard",
+                "delay":"0.5"
+            }, {
+                "id": 4,
+                "img":"img/interior/duduk.jpg",
+                "nama":"New Captain Seat",
+                "delay":"0.7"
+            },
+            {
+                "id": 5,
+                "img":"img/interior/emoney.jpg",
+                "nama":"Smartphone Connectivity",
+                "delay":"0.7"
+            },
+            {
+                "id": 6,
+                "img":"img/interior/tv.jpg",
+                "nama":"Entertainment",
+                "delay":"0.7"
+            }
+        ]
+    }
+    
+   
+    
+  ]
