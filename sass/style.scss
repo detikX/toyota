@@ -106,7 +106,18 @@ section {
     position: relative;
     z-index: 4;
     height: 120vh;
-
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        right: 0;
+        background: #000;
+        box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
+        height: 8px;
+        // animation: blink 0.7s infinite alternate;
+    }
     .bg-neon {
         position: absolute;
         left: 0;
