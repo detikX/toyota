@@ -78,9 +78,22 @@ section {
 
 .paragraph {
     padding: 24px 0;
-    // background-image: linear-gradient(to top, #595f69, #6a767a, #818b8b, #9ba19e, #b6b7b4);
     background: #f5f6f6;
     font-size: 1.8rem;
+    background-attachment: fixed;
+    display: flex;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    background-image: url('../img/jalan.jpg');
+    position: relative;
+
+    @media screen and (max-width) {
+        
+    }
+
+    background-position: right;
+
 
     @media screen and (max-width:766px) {
         font-size: 1.2rem;
@@ -100,6 +113,10 @@ section {
     //     background: #030506;
     //     height: 10px;
     // }
+    .backdrops {
+        background: rgba($color: #fff, $alpha:.5);
+        padding: 16px;
+    }
 }
 
 .profile {
@@ -117,6 +134,9 @@ section {
         box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
         height: 8px;
         // animation: blink 0.7s infinite alternate;
+        @media screen and (max-width:766px) {
+            height: 1px;
+        }
     }
     .bg-neon {
         position: absolute;
@@ -274,6 +294,9 @@ section {
     height: auto;
     position: absolute;
     bottom: -50px;
+    @media screen and (max-width:766px) {
+        bottom: -24px;
+    }
     .image {
         width: 100%;
         height: 100%;

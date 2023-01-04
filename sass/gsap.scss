@@ -2,8 +2,9 @@
   position: relative;
   z-index: 8;
   padding: 16px 0;
-  // background: #a5d6a7;
+  // background: #000;
   background: #f5f6f6;
+  // background: linear-gradient(to bottom, #f5f6f6, black);
 
   h1 {
     text-align: center;
@@ -33,7 +34,7 @@
     padding: 60px;
 
     @media screen and (max-width:766px) {
-      // display: block;
+      display: block;
       padding: 16px !important;
     }
   }
@@ -59,7 +60,8 @@
   }
 
   .cardx__img-holder {
-    width: 35%;
+    // width: 35%;
+    width: 50%;
     height: 75vh;
     position: relative;
 
@@ -72,7 +74,7 @@
       right: 8px;
       border-radius: 4px;
       // background: #4b7644; 
-      background: #dce775;
+      // background: #dce775;
       // border: 2px solid #4b7644;
       z-index: 2;
 
@@ -85,7 +87,7 @@
     }
 
     @media screen and (max-width:766px) {
-      width: 50%;
+      width: 100%;
       height: 40vh;
       margin: 8px;
       // margin-bottom: 16px;
@@ -99,7 +101,7 @@
       position: relative;
       z-index: 3;
       border-radius: 4px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -107,7 +109,7 @@
     width: 400px;
 
     @media screen and (max-width:766px) {
-      width: 50%;
+      width: 100%;
     }
   }
 }
