@@ -4,6 +4,7 @@
   padding: 16px 0;
   // background: #000;
   background: #f5f6f6;
+  
   // background: linear-gradient(to bottom, #f5f6f6, black);
 
   h1 {
@@ -107,6 +108,24 @@
 
   .cardx__text {
     width: 400px;
+    .tes-skew {
+      // transform: skew(-20deg, 0deg);
+      // p {
+      //   transform: skew(20deg,0);
+      // }
+    }
+    .tes-judul{
+      background: #bdbdbd;
+      width: fit-content;
+      padding: 4px 24px;
+      color: #292929;
+      margin-bottom: 8px;
+      transform: skew(-20deg,0);
+      h2 {
+        transform: skew(20deg,0);
+        margin-bottom: 0;
+      }
+    }
 
     @media screen and (max-width:766px) {
       width: 100%;
