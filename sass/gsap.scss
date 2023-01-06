@@ -33,6 +33,22 @@
     justify-content: space-around;
     align-items: center;
     padding: 60px;
+    position: relative;
+    .petax {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
 
     @media screen and (max-width:766px) {
       display: block;
@@ -65,6 +81,7 @@
     width: 50%;
     height: 75vh;
     position: relative;
+    z-index: 18;
 
     &::before {
       content: "";
@@ -108,6 +125,8 @@
 
   .cardx__text {
     width: 400px;
+    position: relative;
+    z-index: 18;
     .tes-skew {
       // transform: skew(-20deg, 0deg);
       // p {
