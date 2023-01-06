@@ -99,7 +99,7 @@ section {
         z-index: 1;
         &::before {
             content: "";
-            background: linear-gradient(to top, white, transparent);
+            background: linear-gradient(to top, #f5f6f6, transparent);
             position: absolute;
             z-index: 2;
             bottom: 0;
@@ -143,6 +143,7 @@ section {
         padding: 16px;
         position: relative;
         z-index: 5;
+        transform: skewX(10deg);
     }
 }
 
