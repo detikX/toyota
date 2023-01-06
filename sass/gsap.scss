@@ -7,8 +7,16 @@
   
   // background: linear-gradient(to bottom, #f5f6f6, black);
 
-  h1 {
+  .titlex-lala {
     text-align: center;
+    font-weight: bold;
+    font-family: 'montserrat';
+    color: #01579b;
+    font-size: 3rem;
+    text-shadow: -2px 2px #80d8ff;
+    @media screen and (max-width:766px) {
+      font-size: 2rem;
+    }
   }
 
   h2 {
@@ -148,10 +156,14 @@
       // } 
     }
     .tes-judul{
-      background: #c1c1c1;
+      // background: #c1c1c1;
+      // width: fit-content;
+      // padding: 4px 24px;
+      // color: #303030;
+      background: #80d8ff;
       width: fit-content;
       padding: 4px 24px;
-      color: #303030;
+      color: #01579b;
       margin-bottom: 8px;
       transform: skew(-20deg,0);
       h2 {
