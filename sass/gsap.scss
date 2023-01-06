@@ -13,7 +13,11 @@
     font-family: 'montserrat';
     color: #01579b;
     font-size: 3rem;
-    text-shadow: -2px 2px #80d8ff;
+    // text-shadow: -2px 2px #80d8ff;
+    border: 4px dashed;
+    width: fit-content;
+    margin: 0 auto 16px;
+    padding: 4px 8px;
     @media screen and (max-width:766px) {
       font-size: 2rem;
     }
