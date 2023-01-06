@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap');
 
 @import 'init';
 @import 'gsap';
@@ -51,11 +51,32 @@ section {
         background-position: center;
         -webkit-background-clip: text;
         color: transparent;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        h2 {
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 0;
+            @media screen and(max-width:766px) {
+                font-size: 4rem;
+            }
+            &.suma {
+                font-size: 4rem;
+                @media screen and (max-width:766px) {
+                    font-size: 2.5rem;
+                }
+            }
+            &.tahun {
+                font-size: 10rem;
+                letter-spacing: 20px;
+                @media screen and (max-width:766px) {
+                    font-size: 8rem;
+                    letter-spacing: 0px;
+                }
 
-        text-transform: uppercase;
-        font-size: 6rem;
-        font-weight: 900;
+            }
+        }
+
         letter-spacing: 1px;
         user-select: none;
         width: 55vw;
