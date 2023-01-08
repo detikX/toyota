@@ -21,3 +21,17 @@ main, p, h1,h2,h3,h4,p,div {
     position: relative;
     z-index: 44;
 }
+
+.firstletter {
+    &::first-letter {
+      float: left;
+      font-weight: bold;
+      margin-right: 8px;
+      font-size: 60px;
+      font-size: 6rem;
+      line-height: 40px;
+      line-height: 4rem;
+      height: 4rem;
+      text-transform: uppercase;
+    }
+  }
