@@ -54,7 +54,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      width: 80%;
+      width: 100%;
       height: 100%;
       z-index: 1;
 
@@ -176,10 +176,10 @@
       // padding: 4px 24px;
       // color: #01579b;
       margin-bottom: 8px;
-      transform: skew(-20deg, 0);
+      // transform: skew(-20deg, 0);
 
       h2 {
-        transform: skew(20deg, 0);
+        // transform: skew(20deg, 0);
         margin-bottom: 0;
       }
     }
