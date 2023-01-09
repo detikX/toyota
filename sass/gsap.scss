@@ -4,7 +4,7 @@
   padding: 16px 0;
   // background: #000;
   background: #f5f6f6;
-  
+
   // background: linear-gradient(to bottom, #f5f6f6, black);
 
   .titlex-lala {
@@ -18,6 +18,7 @@
     width: fit-content;
     margin: 0 auto 16px;
     padding: 4px 8px;
+
     @media screen and (max-width:766px) {
       font-size: 2rem;
     }
@@ -46,6 +47,7 @@
     align-items: center;
     padding: 60px;
     position: relative;
+
     .petax {
       position: absolute;
       left: 0;
@@ -55,9 +57,11 @@
       width: 80%;
       height: 100%;
       z-index: 1;
+
       @media screen and (max-width:766px) {
         width: 100%;
       }
+
       &::before {
         content: "";
         position: absolute;
@@ -69,6 +73,7 @@
         height: 100%;
         background: linear-gradient(to top, #f5f6f6, transparent);
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -153,25 +158,28 @@
     width: 400px;
     position: relative;
     z-index: 18;
+
     .tes-skew {
       // transform: skew(-20deg, 0deg);
       // p {
       //   transform: skew(20deg,0);
       // } 
     }
-    .tes-judul{
-      background: #dadada;
+
+    .tes-judul {
+      background: #cfcfcf;
       width: fit-content;
       padding: 4px 24px;
-      color: #464646;
+      color: #000;
       // background: #80d8ff;
       // width: fit-content;
       // padding: 4px 24px;
       // color: #01579b;
       margin-bottom: 8px;
-      transform: skew(-20deg,0);
+      transform: skew(-20deg, 0);
+
       h2 {
-        transform: skew(20deg,0);
+        transform: skew(20deg, 0);
         margin-bottom: 0;
       }
     }
@@ -186,10 +194,13 @@
   position: absolute;
   bottom: 32px;
   right: 32px;
+
   &.leftx {
     right: initial;
     left: 32px;
+
     .image {
+
       // width: 125px;
       // height: auto;
       img {
