@@ -20,6 +20,84 @@ section {
     // height:100vh;
     width: 100%;
     height: 100vh;
+    position: relative;
+
+    @media screen and (max-width:766px) {}
+
+    .petaxx {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 16px;
+        bottom: 16px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        @media screen and (max-width:766px) {
+            width: 100%;
+            height: 50%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #f5f6f6, transparent);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            @media screen and (max-width:766px) {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .bungkus {
+        display: block;
+        margin: 0 auto;
+        padding: 72px 0;
+        position: relative;
+        z-index: 3;
+
+        .texting {
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+            vertical-align: middle;
+
+            @media screen and (max-width:766px) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .imagesxs {
+            display: inline-block;
+            width: 45%;
+            vertical-align: middle;
+
+            @media screen and (max-width:766px) {
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 
     .image {
         width: 100%;
@@ -33,42 +111,49 @@ section {
     }
 
     .warna {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // height: 100%;
+        // position: absolute;
+        // left: 50%;// top: 50%;
+        // transform: translate(-50%, -50%);
     }
 
     .clip-text {
         font-weight: 700;
         padding: 10px;
-        background: url($url);
-        background-size: cover;
-        background-position: center;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-family: 'Montserrat', sans-serif;
+        // background: url($url);
+        // background-size: cover;
+        // background-position: center;
+        // -webkit-background-clip: text;
+        // color: transparent;
+        font-family: 'Montserrat',
+            sans-serif;
+
         h2 {
             font-size: 6rem;
             text-transform: uppercase;
             font-weight: 900;
             margin-bottom: 0;
+            // font-family: 'montserrat' !important;
+
             @media screen and(max-width:766px) {
                 font-size: 4rem;
             }
+
             &.suma {
                 font-size: 4rem;
+
                 @media screen and (max-width:766px) {
                     font-size: 2.5rem;
                 }
             }
+
             &.tahun {
                 font-size: 10rem;
                 letter-spacing: 20px;
+
                 @media screen and (max-width:766px) {
                     font-size: 8rem;
                     letter-spacing: 0px;
@@ -80,9 +165,8 @@ section {
         letter-spacing: 1px;
         user-select: none;
         width: 55vw;
-        border-top: solid 10px #00000057;
-        border-bottom: solid 10px #00000057;
-        text-align: center;
+        // border-top: solid 10px #00000057;
+        // border-bottom: solid 10px #00000057;  // text-align: center;
 
         @media screen and (min-width:1800px) {
             width: 45vw;
@@ -109,6 +193,11 @@ section {
     align-items: center;
     // background-image: url('../img/jalan.jpg');
     position: relative;
+
+    @media screen and (max-width:766px) {
+        display: block;
+    }
+
     &__img {
         position: absolute;
         top: 0;
@@ -118,6 +207,7 @@ section {
         width: 100%;
         height: 100%;
         z-index: 1;
+
         &::before {
             content: "";
             background: linear-gradient(to top, #f5f6f6, transparent);
@@ -127,6 +217,7 @@ section {
             height: 100%;
             width: 100%;
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -134,9 +225,7 @@ section {
         }
     }
 
-    @media screen and (max-width) {
-        
-    }
+    @media screen and (max-width) {}
 
     background-position: right;
 
@@ -150,6 +239,7 @@ section {
     }
 
     position: relative;
+
     // &::before {
     //     content: "";
     //     position: absolute;
@@ -172,6 +262,7 @@ section {
     position: relative;
     z-index: 4;
     height: 120vh;
+
     /*&::before {
         position: absolute;
         content: "";
@@ -255,6 +346,7 @@ section {
 .imagesx {
     width: 100%;
     height: 320px;
+
     @media screen and (min-width:1500px) {
         height: 400px;
     }
@@ -346,12 +438,15 @@ section {
     height: auto;
     position: absolute;
     bottom: -50px;
+
     @media screen and (max-width:766px) {
         bottom: -24px;
     }
+
     .image {
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
