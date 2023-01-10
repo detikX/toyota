@@ -159,6 +159,10 @@
     position: relative;
     z-index: 18;
 
+    @media screen and (max-width:766px) {
+      text-align: center;
+    }
+
     .tes-skew {
       // transform: skew(-20deg, 0deg);
       // p {
@@ -171,6 +175,13 @@
       width: fit-content;
       padding: 4px 24px;
       color: #000;
+
+      @media screen and (max-width:766px) {
+        margin: 0 auto 16px;
+        display: block;
+        text-align: center;
+      }
+
       // background: #80d8ff;
       // width: fit-content;
       // padding: 4px 24px;
