@@ -13,6 +13,22 @@ section {
     background: #f5f6f6;
 }
 
+.isdesktop {
+    display: block !important;
+
+    @media screen and (max-width:766px) {
+        display: none !important;
+    }
+}
+
+.ismobile {
+    display: none !important;
+
+    @media screen and (max-width:766px) {
+        display: block !important;
+    }
+}
+
 .banner {
     // $url: "https://media.giphy.com/media/eBtpLQVJeFEBx92VCy/giphy.gif";
     $url: "../img/traveling-car.gif";
